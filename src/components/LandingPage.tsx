@@ -16,7 +16,10 @@ import {
   ChevronRight,
   Mail,
   User,
-  Building
+  Building,
+  Send,
+  MessageSquare,
+  UserPlus
 } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup.jpg";
 import eventSpace from "@/assets/event-space.jpg";
@@ -52,14 +55,14 @@ export default function LandingPage() {
                   🚀 Launching Soon in Mumbai, Bangalore & Delhi
                 </Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                  Stop Wasting Hours{" "}
+                  Complete Event Management{" "}
                   <span className="bg-gradient-primary bg-clip-text text-transparent">
-                    Finding a Venue
+                    Made Simple
                   </span>
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  Discover and book the perfect event space — verified, transparent, 
-                  and available when you need it.
+                  Find venues, send invites, and manage your entire event from one platform. 
+                  From planning to post-event follow-up — we've got you covered.
                 </p>
               </div>
               
@@ -105,8 +108,8 @@ export default function LandingPage() {
           <div className="max-w-4xl mx-auto text-center space-y-12">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
-                Planning a Small Event?{" "}
-                <span className="text-primary">Why is it Still So Hard?</span>
+                Event Management is{" "}
+                <span className="text-primary">Still Broken in 2024</span>
               </h2>
             </div>
             
@@ -114,18 +117,18 @@ export default function LandingPage() {
               {[
                 {
                   icon: Search,
-                  title: "70% of venues aren't even listed online",
-                  description: "Most venues rely on word-of-mouth or outdated directories"
+                  title: "Venue hunting takes weeks, not hours",
+                  description: "70% of venues aren't listed online with transparent pricing"
                 },
                 {
-                  icon: Clock,
-                  title: "You spend 15+ hours just calling and chasing",
-                  description: "Endless phone calls with no clear availability or pricing"
+                  icon: Mail,
+                  title: "Manual invite management is a nightmare",
+                  description: "Sending invites, tracking RSVPs, and following up manually"
                 },
                 {
-                  icon: Shield,
-                  title: "Hidden charges, no-shows, and last-minute cancellations",
-                  description: "Surprise costs and unreliable venue partners"
+                  icon: MessageSquare,
+                  title: "Post-event communication gets forgotten",
+                  description: "Thank you messages, feedback collection, and follow-ups are overlooked"
                 }
               ].map((problem, index) => (
                 <Card key={index} className="p-6 text-center border-0 shadow-soft">
@@ -145,9 +148,9 @@ export default function LandingPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center space-y-4 mb-16">
               <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
-                Discover, Compare, and Book —{" "}
+                From Venue to Follow-up —{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  All in One Place
+                  Complete Event Management
                 </span>
               </h2>
             </div>
@@ -156,29 +159,29 @@ export default function LandingPage() {
               <div className="space-y-8">
                 {[
                   {
-                    icon: CheckCircle,
-                    title: "Transparent pricing & availability",
-                    description: "See real prices upfront with no hidden fees"
+                    icon: Search,
+                    title: "Smart venue discovery & booking",
+                    description: "Find verified venues with transparent pricing and instant booking"
                   },
                   {
-                    icon: Star,
-                    title: "Verified venues with past reviews",
-                    description: "Every venue is verified with authentic guest reviews"
+                    icon: Send,
+                    title: "Automated invite management",
+                    description: "Send beautiful invites, track RSVPs, and manage guest lists effortlessly"
                   },
                   {
-                    icon: Zap,
-                    title: "Real-time quotes and instant bookings",
-                    description: "Get quotes in minutes and book instantly online"
+                    icon: Calendar,
+                    title: "Event day coordination",
+                    description: "Real-time updates, check-in management, and seamless communication"
+                  },
+                  {
+                    icon: MessageSquare,
+                    title: "Post-event engagement",
+                    description: "Automated thank-you messages, feedback collection, and follow-up campaigns"
                   },
                   {
                     icon: Users,
-                    title: "Smart filters by capacity, vibe, and budget",
-                    description: "Find exactly what you need with powerful search filters"
-                  },
-                  {
-                    icon: Shield,
-                    title: "Backup options in case of cancellations",
-                    description: "We ensure you always have alternatives ready"
+                    title: "Participant insights & analytics",
+                    description: "Track engagement, gather feedback, and improve future events"
                   }
                 ].map((feature, index) => (
                   <div key={index} className="flex gap-4 items-start">
@@ -218,15 +221,15 @@ export default function LandingPage() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  quote: "This would've saved me 2 weeks of venue hunting.",
+                  quote: "From venue booking to thank-you messages — finally everything in one place!",
                   author: "Priya S., Event Manager"
                 },
                 {
-                  quote: "I just want a clean space with AC and Wi-Fi — this nails it.",
+                  quote: "The invite management alone saved me 5 hours per event.",
                   author: "Rahul K., Startup Founder"
                 },
                 {
-                  quote: "Finally a place that shows me what's included in the price!",
+                  quote: "Post-event follow-up used to be my biggest headache. Not anymore!",
                   author: "Anjali M., Corporate Planner"
                 }
               ].map((testimonial, index) => (
